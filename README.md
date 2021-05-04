@@ -133,13 +133,13 @@ and add a **string key** named `Autorun`, value is `C:\bashrc.cmd`
 
 3. In the json file, edit the following lines:  
 
-    ->>`"generator": "NMake Makefiles"` ->> This because `Catkin_make` uses `NMake` instead of `Ninja`  
+    ->>`"generator": "Ninja"` ->> Ninja seems to work (This because `Catkin_make` uses `NMake` instead of `Ninja`)
     ->>`"configurationType": "RelWithDebInfo"` ->> Match with Catkin Type  
     ->>`"buildRoot": "C:\\catkin_ws\\build"` ->> Change build root to **your own workspace folder** (refer to you solution penal on the right side)  
     ->>`"installRoot": "C:\\catkin_ws\\install"` ->> Change install root to **your own workspace folder** (refer to you solution penal on the right side)  
     ->>`"cmakeCommandArgs": "DCATKIN_DEVEL_PREFIX=C:\\catkin_ws\\devel"` ->> Change develpment root to **your own workspace folder** (refer to you solution penal on the right side)  
     ->>~~`"buildCommandArgs": "-v"`~~  
-    ->>`"cmakeExecutable": "C:/opt/rosdeps/x64/bin/cmake.exe" ` ->> Add this line to use ROS default cmake to avoid confusing errors.  
+    ->>`"cmakeExecutable": "C:/opt/rosdeps/x64/bin/cmake.exe" ` ->> Links to my melodic installation path, but in principle this is ok (Add this line to use ROS default cmake to avoid confusing errors.)
 
     Refer to following pictures:  
 
