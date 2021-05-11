@@ -139,7 +139,7 @@ and add a **string key** named `Autorun`, value is `C:\bashrc.cmd`
     ->>`"installRoot": "C:\\catkin_ws\\install"` ->> Change install root to **your own workspace folder** (refer to you solution penal on the right side)  
     ->>`"cmakeCommandArgs": "DCATKIN_DEVEL_PREFIX=C:\\catkin_ws\\devel"` ->> Change develpment root to **your own workspace folder** (refer to you solution penal on the right side)  
     ->>~~`"buildCommandArgs": "-v"`~~  
-    ->>`"cmakeExecutable": "C:/opt/rosdeps/x64/bin/cmake.exe" ` ->> Links to my melodic installation path, but in principle this is ok (Add this line to use ROS default cmake to avoid confusing errors.)
+    ->>`"cmakeExecutable": "C:\\opt\\ros\\melodic\\x64\\Scripts\\cmake.exe" ` ->> Links to my melodic installation path, but in principle this is ok (Add this line to use ROS default cmake to avoid confusing errors.)
 
     Refer to following pictures:  
 
